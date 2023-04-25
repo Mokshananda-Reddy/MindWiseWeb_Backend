@@ -18,7 +18,7 @@ public class Task {
     @Id
     @GeneratedValue
     private Long taskID;
-    private boolean default_flag;
+    private Long defaultflag;
     private String description;
     private String type;
     private String answer;
@@ -26,21 +26,20 @@ public class Task {
     public Task() {
     }
 
-    public Task(boolean default_flag, String description, String type, String answer) {
-        this.default_flag = default_flag;
+    public Task(Long defaultflag, String description, String type, String answer) {
+        this.defaultflag = defaultflag;
         this.description = description;
         this.type = type;
         this.answer = answer;
     }
 
-    public boolean isDefault_flag() {
-        return default_flag;
+    public Long getDefaultflag() {
+        return defaultflag;
     }
 
-    public void setDefault_flag(boolean default_flag) {
-        this.default_flag = default_flag;
+    public void setDefaultflag(Long defaultflag) {
+        this.defaultflag = defaultflag;
     }
-
     public String getDescription() {
         return description;
     }

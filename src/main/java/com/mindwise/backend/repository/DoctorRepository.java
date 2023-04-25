@@ -1,6 +1,5 @@
 package com.mindwise.backend.repository;
 
-import com.mindwise.backend.model.Admin;
 import com.mindwise.backend.model.Doctor;
 import com.mindwise.backend.model.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
